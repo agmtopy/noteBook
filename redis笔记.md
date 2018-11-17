@@ -33,4 +33,20 @@
 
 #### list
 
+redis中的列表相当于linedlist(链表结构),常用来作为异步队列,一个线程将任务结构体序列化成string push到队列中,另外一个线程进行读取.支持FIFO/FILO,底层存储结构,在数据量较小的时候采用ziplist(压缩列表,内存中连续分配一块区域)，当数据量较大时采用quicklist(用双向链表将ziplist串联起来)
+
+操作
+
+ 序号|命令|含义
+ --|--|--
+1|rpush key value\|value... |设置list值
+2|llen key| list的长度
+3|lpop key|FIFO
+4|rpop key|FILO
+5|lindex key index|获取指定位置的值
+6|ltrim key start end|截取list
+7|lrange key start end|返回指定范围的值
+
+
+
  
