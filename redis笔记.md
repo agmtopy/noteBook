@@ -47,6 +47,59 @@ redis中的列表相当于linedlist(链表结构),常用来作为异步队列,�
 6|ltrim key start end|截取list
 7|lrange key start end|返回指定范围的值
 
+#### hash
+ redis的hash相当于java中的HashMap,底层结构与HashMap实现方式一致,redis的hash在进行rehash时,为保证高性能,采用渐进式rehash的策略.只能存储字符串.
+
+ 操作
+ 序号|命令|含义
+ --|--|--
+ 1|hset key field value|向hash集合中set元素
+ 2|hgetall key|获取指定hash集合的全部值
+ 3|hlen key|获取hash的长度
+ 4|hget key field|获取指定hash的属性值
+ 5|hmset key field\|filed value...|批量设置field的值
+ 6|hmget key field\|filed ...|批量获取filed的值
+ 7|hincrby key field increment|设置属性值自增
+
+ #### set
+   set内部无序且唯一的键值结构
+
+操作
+ 序号|命令|含义
+ --|--|--
+ 1|sadd key member\|member...|设置元素
+ 2|smembers key|获取全部元素
+ 3|sismember key member|判断指定set集合中是否存在元素
+ 4|scard key|获取set的长度
+ 5|spop key|弹出一个元素
+
+#### zset
+ zset 是内部有序的set集合,为每一个value赋予一个score的排序权重.底层采用跳跃列表的数据结构进行存储.
+  
+  操作
+   序号|命令|含义
+ --|--|--
+ 1|zadd key score value \|key score value ...|装载元素
+ 2|zrange key|顺序弹出
+ 3|zrevrange key|逆序弹出
+ 4|zcard key|统计条数
+ 5|zrangebyscore key statr end|获取指定范围内的值
+ 6|zrem key value|删除指定的value
+ 
+ #### 容器的通用规则
+  1. create if not exists 不存在就创建
+  2. drop is not elements 没有元素就回收集合释放内存
+
+  - 存储结构体用string还是hash?
+   string:
+   1.在访问中使用到了大部分字段
+   
+   hash
+   1.在访问中总是只用到几个字段
+   
+
+
+
 
 
  
