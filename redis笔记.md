@@ -77,7 +77,7 @@ redis中的列表相当于linedlist(链表结构),常用来作为异步队列,�
  zset 是内部有序的set集合,为每一个value赋予一个score的排序权重.底层采用跳跃列表的数据结构进行存储.
   
   操作
-   序号|命令|含义
+序号|命令|含义
  --|--|--
  1|zadd key score value \|key score value ...|装载元素
  2|zrange key|顺序弹出
@@ -93,10 +93,76 @@ redis中的列表相当于linedlist(链表结构),常用来作为异步队列,�
   - 存储结构体用string还是hash?
    string:
    1.在访问中使用到了大部分字段
-   
+   2.某些属性不同
    hash
    1.在访问中总是只用到几个字段
-   
+   2.知道那些字段是可用的
+
+   ---------------------------------------------
+
+### 应用   
+
+#### 分布式锁
+
+分布式锁本质上是在redis中占用一个资源,当别的进程要来获取资源时候,只能放弃或阻塞.
+
+操作
+序号|命令|含义
+--|--|--
+1|setnx key true|设置锁
+2|del key|删除锁
+3|expire key seconds |设置锁的过期时间
+4|set key value [EX seconds] [PX millisenconds] [NX|EX] |将setnx和expire命令合二为一
+
+
+#### 延时队列
+
+redis可以用list结构来作为异步延时队列,使用rpush/lpush插入队列,使用lpop/rpop来弹出队列.使用blpop/brpop来进行阻塞读,
+
+#### 位图
+
+位图底层采用的是普通的byte数组,可以使用普通的get/set来直接获取和操作整个位图的内容,也可以通过getbit/setbit来将byte数组看成位数组来处理.
+
+操作
+序号|命令|含义
+--|--|--
+1|getbit key offset|获取指定byte数组index位置上的值
+2|setbit key offset value|设置byte数组指定位置上的值
+3|bitcount key [start end]|统计指定范围内1的个数
+4|bitpos key bit[start end]|统计指定范围内0的个数
+
+#### HyperLogLog
+ HyperLogLog提供不精确的去重方案,是redis的高级数据结构.
+
+操作
+序号|命令|含义
+--|--|--
+1|pfadd key element\|element ...|设置元素
+2|pfcount key|统计key
+
+
+#### 布隆过滤器
+ 底层通过计算多个均匀hash函数的值来保存对象的指纹,通过指纹来判断该元素是否存在.
+
+ #### 简单限流
+ 通过zset的超时过期的策略来维护一个在单位时间内失效的key,在应用层判断是否操作最大maxcount,来判断结果，从而进行业务上的操作.
+
+#### 漏斗限流
+通过redis-cell实现的一种限流策略
+
+#### GeoHash
+基于GeoHash地理位置距离排序算法的set集合,提供一系列操作来实现geo功能
+
+#### Scan
+redis运维管理
+
+kesy * 查询所有key
+scan * 查询特定的key
+
+### 原理
+
+
+
 
 
 
