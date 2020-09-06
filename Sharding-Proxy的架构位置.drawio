@@ -1,1 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2020-09-06T13:17:12.367Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" version="13.6.6" etag="0vfsSvAGLp519br0DRo1" type="github"><diagram id="B9-zF5y7Q6Qf3j-DLWph">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-09-06T13:26:59.308Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36" etag="B0y09dTJO3qr8XSoDnLs" version="13.6.6" type="github">
+  <diagram id="B9-zF5y7Q6Qf3j-DLWph" name="第 1 页">
+    <mxGraphModel dx="1021" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KWtgufi12xfb_sNd7K85-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KWtgufi12xfb_sNd7K85-1" target="KWtgufi12xfb_sNd7K85-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KWtgufi12xfb_sNd7K85-1" target="KWtgufi12xfb_sNd7K85-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.483;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KWtgufi12xfb_sNd7K85-1" target="KWtgufi12xfb_sNd7K85-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KWtgufi12xfb_sNd7K85-1" target="KWtgufi12xfb_sNd7K85-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KWtgufi12xfb_sNd7K85-1" target="KWtgufi12xfb_sNd7K85-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-1" value="&lt;font color=&quot;#000000&quot;&gt;Sharding-Proxy&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" vertex="1" parent="1">
+          <mxGeometry x="244" y="310" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-3" value="App" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="170" y="190" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-6" value="App" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="370" y="190" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KWtgufi12xfb_sNd7K85-8" target="KWtgufi12xfb_sNd7K85-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-8" value="MySQL cli" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="530" y="305" width="101" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-11" value="注册中心" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="305" width="101" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-12" value="DB" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="210" y="450" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KWtgufi12xfb_sNd7K85-13" value="DB" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=9;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="395" y="450" width="60" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
