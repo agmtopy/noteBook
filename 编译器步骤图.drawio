@@ -1,1 +1,90 @@
-<mxfile host="app.diagrams.net" modified="2022-03-03T15:19:13.137Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" version="14.7.7" etag="3K6KEPldWg-O4xHcFQpc" type="github"><diagram id="1CVHgrTUtQF9n8n9SvBz">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-03T15:19:28.185Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="xypkUlTBNyCyQpn__4E4" version="14.7.7" type="github">
+  <diagram id="1CVHgrTUtQF9n8n9SvBz" name="第 1 页">
+    <mxGraphModel dx="1209" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FrPxhITRIpKU2Au3II6a-1" value="词法分析器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="130" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-2" value="语法分析器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="230" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-3" value="语义分析器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="330" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-4" value="中间代码生成器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="430" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-5" value="机器无关代码优化器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="530" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-6" value="代码生成器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="630" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-7" value="机器相关代码生成器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="730" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-8" value="符号流" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FrPxhITRIpKU2Au3II6a-1" target="FrPxhITRIpKU2Au3II6a-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="220" as="sourcePoint" />
+            <mxPoint x="560" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-9" value="语法树" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FrPxhITRIpKU2Au3II6a-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="280" as="sourcePoint" />
+            <mxPoint x="510" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="509.71000000000004" y="370" as="sourcePoint" />
+            <mxPoint x="509.71000000000004" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-11" value="语法树" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FrPxhITRIpKU2Au3II6a-10">
+          <mxGeometry x="-0.2364" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-12" value="中间表示形式" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="509.71000000000004" y="470" as="sourcePoint" />
+            <mxPoint x="509.71000000000004" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-13" value="中间表示形式" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="509.71000000000004" y="570" as="sourcePoint" />
+            <mxPoint x="509.71000000000004" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-14" value="目标机器语言" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="509.71000000000004" y="670" as="sourcePoint" />
+            <mxPoint x="509.71000000000004" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-15" value="字符流" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="80" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FrPxhITRIpKU2Au3II6a-15" target="FrPxhITRIpKU2Au3II6a-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="250" as="sourcePoint" />
+            <mxPoint x="500" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-17" value="目标机器语言" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FrPxhITRIpKU2Au3II6a-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="830" as="sourcePoint" />
+            <mxPoint x="510" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FrPxhITRIpKU2Au3II6a-18" value="符号表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
